@@ -104,19 +104,6 @@ testing testing
 
 ***both bold and italics***
 
-~~strikethrough~~
-
-# Order Lists
-
--   Item 1
--   Item 2
-    -   Sub-item 2a
-    -   Sub-item 2b
-
-1.  First step
-
-
-
 # Citations
 
 <!-- You have to be in visual mode for this -->
