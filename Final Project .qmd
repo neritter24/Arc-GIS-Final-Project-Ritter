@@ -1,0 +1,96 @@
+---
+title: "Practice"
+author: "Natalie R."
+date: today
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-location: left
+    page-layout: article
+    number-sections: true
+    code-fold: show
+page-layout: article
+---
+
+# Headers
+
+## level 2 Header
+
+### level 3 Header
+
+#### level 4 Header
+
+##### level 5 Header
+
+###### Level 6 header
+
+``` markdown
+testing testing !
+```
+
+```{r}
+2 + 2 + 2 
+```
+
+# Text Functions
+
+**bold**
+
+*italicize*
+
+***both bold and italics***
+
+~~strikethrough~~
+
+# Order Lists
+
+-   Item 1
+-   Item 2
+    -   Sub-item 2a
+    -   Sub-item 2b
+
+1.  First step
+
+# Hyperlink
+
+[hyperlink](https://quarto.org)
+
+# Tabsets
+
+::::: panel-tabset
+## Tab 1
+
+::: panel-tabset
+## First child
+
+testing testing
+
+## Second Child
+:::
+
+## Tab 2
+
+::: panel-tabset
+## First child
+
+## Second Child
+:::
+:::::
+
+# LaTex syntax
+
+1.  Examples
+
+<!-- -->
+
+a)  $y = mx + b$
+b)  $$ \frac {1.5}{2.3}$$
+c)  $$ Y = X_1 + X^2$$
+d)  $$ \sqrt{p^2}$$
+
+# Citations
+
+<!-- You have to be in visual mode for this -->
+
+This is a really good paper [@cook2015].
