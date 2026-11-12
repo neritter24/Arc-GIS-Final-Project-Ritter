@@ -10,10 +10,11 @@ format:
     page-layout: article
     number-sections: true
     code-fold: show
+bibliography: reference.bib
 page-layout: article
 ---
 # Data Table
-*Below is a list of all fish specimens collected as well as their respecrtive dates, locations, and methods of collection. I focused on collecting 20 specimens from each species and derived my species list from a previous paper, [Cook et al., 2015](https://www.researchgate.net/profile/Nico-Smit-2/publication/280731026_Blood_parasite_biodiversity_of_reef-associated_fishes_of_the_eastern_Caribbean/links/55c3791208aea2d9bdc1b74b/Blood-parasite-biodiversity-of-reef-associated-fishes-of-the-eastern-Caribbean.pdf), which sampled a broader range of fish species in the Caribbean. I focused on collecting species that were found to harbor apicomplexan infections in Cook's study*
+*Below is a list of all fish specimens collected as well as their respecrtive dates, locations, and methods of collection. I focused on collecting 20 specimens from each species and derived my species list from a previous paper, [@cook2015blood], which sampled a broader range of fish species in the Caribbean. I focused on collecting species that were found to harbor apicomplexan infections in Cook's study*
 
 ```{r}
 #| label: load-csv
@@ -75,22 +76,6 @@ print(Bar_graph)
 ```
 
 # GIS Figure
----
-#| fig-cap: "My caption"
-#| out-width: "50%"
-#| fig-align: "center"
-![](image.png){.lightbox}
 
-![Map of survey sites across St. Thomas and Lovango](images/Layout.jpg)
-{.lightbox fig-align="center" width="50%"}
-# GIS Figures
+![Map of survey sites across St. Thomas and Lovango](images/Layout.jpg){fig-align="center" width="80%" .lightbox}
 
-
-
-
-
-# Citations
-
-<!-- You have to be in visual mode for this -->
-
-This is a really good paper [@cook2015].
