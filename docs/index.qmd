@@ -51,13 +51,6 @@ testing testing
 ## Second Child
 :::
 :::::
-``` markdown
-testing testing !
-```
-
-```{r}
-2 + 2 + 2 
-```
 
 # Text Functions
 
@@ -78,20 +71,7 @@ testing testing !
 
 1.  First step
 
-# Hyperlink
 
-[hyperlink](https://quarto.org)
-
-# LaTex syntax
-
-1.  Examples
-
-<!-- -->
-
-a)  $y = mx + b$
-b)  $$ \frac {1.5}{2.3}$$
-c)  $$ Y = X_1 + X^2$$
-d)  $$ \sqrt{p^2}$$
 
 # Citations
 
