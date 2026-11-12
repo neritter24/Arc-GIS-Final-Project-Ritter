@@ -14,7 +14,7 @@ bibliography: reference.bib
 page-layout: article
 ---
 # Data Table
-*Below is a list of all fish specimens collected as well as their respecrtive dates, locations, and methods of collection. I focused on collecting 20 specimens from each species and derived my species list from a previous paper, [@cook2015blood], which sampled a broader range of fish species in the Caribbean. I focused on collecting species that were found to harbor apicomplexan infections in Cook's study*
+*Below is a list of all fish specimens collected as well as their respective dates, locations, and methods of collection. I focused on collecting 20 specimens from each species and derived my species list from a previous paper, [@cook2015blood], which sampled a broader range of fish species in the Caribbean. I focused on collecting species that were found to harbor apicomplexan infections in Cook's study*
 
 ```{r}
 #| label: load-csv
@@ -32,13 +32,13 @@ my_data <- read_csv("../Data/Thesis_data.csv")
 datatable(my_data, options = list(pageLength = 10))
 
 ```
-# Graph
+# Family Composition Graph
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| label: fig-total-fish-catch
-#| fig-cap: "Total fish caught across each survey location, grouped by taxonomic family."
+#| fig-cap: "Total fish caught between June and November 2026 across each survey location, grouped by taxonomic family."
 fish_data <- my_data %>%
   mutate(Family = case_when(
     Fish_Species %in% c("Stop Light P", "Princess P") ~ "Scaridae",
@@ -56,7 +56,6 @@ fish_data <- my_data %>%
   )) %>%
   arrange(Family, Fish_Species)
 
-# 2. Stacked Bar Chart: Total Fish Caught per Site, Colored by Family
 Bar_graph <- ggplot(fish_data, aes(x = fct_infreq(Location), fill = Family)) +
   geom_bar() +
   geom_text(
@@ -77,5 +76,5 @@ print(Bar_graph)
 
 # GIS Figure
 
-![Map of survey sites across St. Thomas and Lovango](images/Layout.jpg){fig-align="center" width="80%" .lightbox}
+![Figure 1: Map of fish collection sites sampled in the USVI](images/Layout.jpg){fig-align="center" width="80%" .lightbox}
 
