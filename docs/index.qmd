@@ -74,35 +74,20 @@ print(Bar_graph)
 
 ```
 
+# GIS Figure
+---
+#| fig-cap: "My caption"
+#| out-width: "50%"
+#| fig-align: "center"
+![](image.png){.lightbox}
+
+![Map of survey sites across St. Thomas and Lovango](images/Layout.jpg)
+{.lightbox fig-align="center" width="50%"}
 # GIS Figures
 
-::::: panel-tabset
-## Tab 1
 
-::: panel-tabset
-## First child
 
-testing testing
 
-## Second Child
-:::
-
-## Tab 2
-
-::: panel-tabset
-## First child
-
-## Second Child
-:::
-:::::
-
-# Text Functions
-
-**bold**
-
-*italicize*
-
-***both bold and italics***
 
 # Citations
 
